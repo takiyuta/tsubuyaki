@@ -60,7 +60,16 @@
   
     </form>
 
-  
+    <h2>検索する</h2>
+    <form th:action="@{/read2}" th:object="${Searchform}" method="get">
+        <label for="name_search">コメント検索：</label>
+
+        <input type="text" th:field="*{keyword}" size="8" />
+        <input type="submit" value="検索" />
+    </form>
+
+
+
     <h2>タイトルへ</h2>
 
   

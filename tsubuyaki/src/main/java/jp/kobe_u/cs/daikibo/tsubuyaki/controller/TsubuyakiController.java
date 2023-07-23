@@ -96,7 +96,19 @@ public class TsubuyakiController {
   
     }
 
+        @GetMapping("/read2")
+
+    
+        String SearchTsubuyakiList(@ModelAttribute("searchform") Searchform form , Model model) {
+
+    
+            List<Tsubuyaki> list = ts.search(form.getKeyword());
+            model.addAttribute("search", list);
+    
+            return "search" ;
+
   
+    }
 
   
 }

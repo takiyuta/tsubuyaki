@@ -71,7 +71,13 @@ public class TsubuyakiService {
 
   
     }
+        public List<Tsubuyaki> search(String t) {
 
+            List<Tsubuyaki> found = repo.findComments(t);
+
+            return found;
+
+    }
   
- }
+}
 
