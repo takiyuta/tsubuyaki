@@ -52,7 +52,7 @@ public class TsubuyakiService {
     }
 
   
-    // 全つぶやきを取得
+    // 全つぶやきを取得する
 
   
     public List<Tsubuyaki> getAllTsubuyaki() {
