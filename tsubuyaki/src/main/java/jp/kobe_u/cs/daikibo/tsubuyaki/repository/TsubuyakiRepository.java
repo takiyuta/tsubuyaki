@@ -12,5 +12,5 @@ import java.util.List;
 public interface TsubuyakiRepository extends CrudRepository<Tsubuyaki, Long>{
 
 
-    List<Tsubuyaki> findComments(String comment);
+    List<Tsubuyaki> findByComment(String comment);
 }

@@ -52,7 +52,7 @@ public class TsubuyakiService {
     }
 
   
-    // 全つぶやきを取得する
+    // 全つぶやきを取得
 
   
     public List<Tsubuyaki> getAllTsubuyaki() {
@@ -73,11 +73,10 @@ public class TsubuyakiService {
     }
         public List<Tsubuyaki> search(String t) {
 
-            List<Tsubuyaki> found = repo.findComments(t);
+            List<Tsubuyaki> found = repo.findByComment(t);
 
             return found;
 
     }
   
 }
-
